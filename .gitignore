@@ -1,0 +1,30 @@
+# Dependency directories
+node_modules
+
+# Nuxt project build outputs and caches
+.nuxt
+.output
+dist
+
+# Local data storage (our price history)
+.data
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.vscode
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
