@@ -1,0 +1,22 @@
+# This is the name of your Cloudflare Pages project.
+# It MUST match the project name in your Cloudflare dashboard exactly.
+name = "paralelistico"
+
+# This tells Cloudflare that this is a Pages project and where the output files are.
+pages_build_output_dir = "dist"
+
+# This ensures your Worker functions are compatible with recent features.
+compatibility_date = "2024-03-20"
+
+# This section defines the cron triggers for your project.
+[triggers]
+# The `crons` array can contain multiple schedules.
+# This schedule runs every 15 minutes.
+crons = ["*/15 * * * *"]
+
+# This section is for bindings, like your KV namespace.
+# It ensures that even when developing locally with Wrangler, the binding is declared.
+[[kv_namespaces]]
+binding = "DB"
+id = "cb417b459423499d97015495cea9bfa4" # You need to get this from the Cloudflare dashboard.
+preview_id = "cb417b459423499d97015495cea9bfa4" # Also from the dashboard.
